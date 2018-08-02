@@ -1,0 +1,9 @@
+
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^sistema\.joinvasc\.com\.br$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.sistema\.joinvasc\.com\.br$
+RewriteCond %{REQUEST_URI} !^/[0-9]+\..+\.cpaneldcv$
+RewriteCond %{REQUEST_URI} !^/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+RewriteCond %{REQUEST_URI} !^/\.well-known/acme-challenge/[0-9a-zA-Z_-]+$
+RewriteRule ^/?$ "http\:\/\/sistema\.joinvasc\.com\.br" [R=301,L]
+

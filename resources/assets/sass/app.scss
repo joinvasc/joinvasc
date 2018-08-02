@@ -1,0 +1,148 @@
+// Fonts
+@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);
+// Variables
+@import "variables";
+// Bootstrap
+@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap/variables";
+@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap/mixins";
+@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+@import "bootswatch";
+// Font Awesome
+@import "node_modules/font-awesome/scss/font-awesome";
+@import "node_modules/font-awesome/scss/variables";
+// Awesome Bootstrap Checkboxes & Radios
+@import "awesome-bootstrap-checkbox";
+// Select2
+@import "node_modules/select2/src/scss/core";
+
+
+// Search box
+.search-box {
+  margin-top: 20px;
+
+  h3 {
+    margin-bottom: 50px;
+  }
+}
+
+// Select2
+.select2-container {
+   width: 100%!important;
+}
+
+.select2-results__options {
+  max-height: 500px !important;
+}
+
+.select2-container--default {
+  .select2-selection {
+    height: 38px;
+    padding: 0;
+    font-size: 14px;
+    line-height: 1.42;
+    color: #555555;
+    background-color: #ffffff;
+    background-image: none;
+    border: 1px solid #e7e7e7;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 2px 0 rgba(0, 0, 0, 0.075);
+    -moz-box-shadow: inset 0 2px 0 rgba(0, 0, 0, 0.075);
+    box-shadow: inset 0 2px 0 rgba(0, 0, 0, 0.075);
+
+    .select2-selection__rendered,
+    .select2-selection__arrow {
+      height: 100%;
+      line-height: 2.8;
+    }
+  }
+}
+
+.required label:after {
+  color: #e32;
+  content: ' *';
+  display:inline;
+}
+
+
+.row{
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+.btnAddDashboard{
+    z-index: 1;
+    position: relative;
+    margin-bottom: 6px;
+    margin-left: 15px;
+    background-color: #ffffff;
+    border: 1px solid #ffffff;
+    height: 26px;
+    width: 26px;
+    border: 1px solid #dfdcdc;
+    border-radius: 8px;
+}
+
+.teste.glyphicon.glyphicon-plus{
+  font-size: 12px;
+
+}
+.teste.glyphicon.glyphicon-plus:before{
+  margin-left: 1px !important;
+}
+
+.teste.glyphicon.glyphicon-trash:before{
+  margin-right: 1px !important;
+  margin-left: -2px;
+}
+
+.VueTables__limit {
+display: none;
+}
+
+.highlight{
+  background-color: #dededd;
+}
+
+.VueTables__search {
+  /*display: none;*/
+  margin-left: 150px;
+}
+
+.highlight {
+  background-color: #dededd;
+}
+
+.dash-adjust{
+  padding-bottom: 40px;
+}
+
+.btns-dash{
+    margin-bottom: -37px;
+}
+
+@media (max-width: 767px) {
+    .btns-dash{
+        margin-bottom: -60px;
+    }
+}
+
+.loading{
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(192, 192, 192, 0.5);
+}
+
+.v-spinner{
+  margin-top: 25%;
+  z-index: 1000;
+}
+
+.v-clip{
+  height: 80px !important ;
+  width: 80px !important;
+}
